@@ -35,6 +35,7 @@ Then fill in empty values in the `.env.prod` file.
 
 ```sh
 cp .env.example .env.prod
+vim .env.prod
 ```
 
 Build the production image
