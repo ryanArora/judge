@@ -1,6 +1,8 @@
 version: "3.9"
 services:
   next:
+    stdin_open: true
+    tty: true
     build:
       context: .
       target: development
