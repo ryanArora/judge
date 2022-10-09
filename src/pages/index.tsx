@@ -29,6 +29,7 @@ const Home: NextPage = () => {
                 onClick={() => {}}
                 className="px-10"
                 src="/favicon.svg"
+                alt="judge gavel logo"
                 width={64}
                 height={64}
               />
