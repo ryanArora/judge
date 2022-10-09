@@ -4,6 +4,8 @@ a work in progress programming judge.
 
 ## Setup
 
+Make sure you clone with `--recurse-submodules`.
+
 ### Development
 
 Copy the example environment variables.
