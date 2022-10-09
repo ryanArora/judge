@@ -3,8 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { signIn, signOut, useSession } from "next-auth/react";
 
-import HeaderLink from "./HeaderLink";
 import HeaderLinksList from "./HeaderLinksList";
+import UserProfile from "./UserProfille";
 
 const Header: React.FC = () => {
   const { data: sessionData } = useSession();
@@ -15,13 +15,15 @@ const Header: React.FC = () => {
         <div className="mx-2 flex items-center">
           <div className="px-2 hover:cursor-pointer">
             <Link href="/">
-              <Image
-                onClick={() => {}}
-                src="/favicon.svg"
-                alt="judge gavel logo"
-                width={64}
-                height={64}
-              />
+              <a>
+                <Image
+                  onClick={() => {}}
+                  src="/favicon.svg"
+                  alt="judge gavel logo"
+                  width={64}
+                  height={64}
+                />
+              </a>
             </Link>
           </div>
 
@@ -39,6 +41,7 @@ const Header: React.FC = () => {
       </div>
 
       <div className="mx-4">
+        {sessionData ? <UserProfile user={sessionData.user} /> : null}
         <button
           className="justify-self-end text-neutral-500"
           onClick={sessionData ? () => signOut() : () => signIn()}
