@@ -55,7 +55,7 @@ exit
 Run the app
 
 ```sh
-docker run -p "8080:80" --env-file .env.prod -it judge-prod
+docker run -p 8080:80 --env-file .env.prod -it judge-prod
 ```
 
 You can see it at `http://localhost:8080`
