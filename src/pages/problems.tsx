@@ -1,17 +1,13 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { trpc } from "../utils/trpc";
 
 import Header from "~/components/Header";
 
-const Home: NextPage = () => {
-  // const hello = trpc.example.hello.useQuery({ text: "from tRPC" });
-  // const { data: secretMessage } = trpc.auth.getSecretMessage.useQuery();
-
+const Problems: NextPage = () => {
   return (
     <>
       <Head>
-        <title>home - judge.</title>
+        <title>problems - judge.</title>
         <meta
           name="description"
           content="a work in progress programming judge."
@@ -20,10 +16,10 @@ const Home: NextPage = () => {
       </Head>
       <Header />
       <main>
-        <h1>Home Page</h1>
+        <h1>Problems Page</h1>
       </main>
     </>
   );
 };
 
-export default Home;
+export default Problems;
