@@ -1,5 +1,6 @@
 import { t } from "../trpc";
 import { z } from "zod";
+import { env } from "../../../env/server.mjs";
 
 export const exampleRouter = t.router({
   hello: t.procedure

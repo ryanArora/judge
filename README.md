@@ -28,6 +28,13 @@ docker-compose up
 
 You can see it at `http://localhost:3000`
 
+To run prisma studio,
+
+```
+docker exec -it judge-next /bin/bash
+yarn prisma studio
+```
+
 ### Production
 
 Copy the example environment variables.
